@@ -1,0 +1,80 @@
+IMPLEMENT CONTROL STATEMENTS
+
+SOLUTION-
+
+Control statements control the flow of any program and tells whether the particular program will get executed or not.
+They are:-
+
+IF-ELSE 
+Syntax:
+if (condition) 
+{ 
+Statement 1; //if it's true
+}
+else
+{
+Statement 2; //otherwise
+}
+
+Implementation:
+public static void main(String args[])
+{
+int a = 100;
+if (a > 20)
+System.out.println("a is greater than 20");
+else
+System.out.println("a is less than 20");
+}
+}
+
+WHILE
+Syntax:
+while (condition)
+{
+statement;
+}
+
+Implementation:
+
+public static void main(String args[])
+{
+int i = 5;
+while (i <= 15)
+{
+System.out.println(i);
+i = i+5;
+}
+}
+
+DO-WHILE
+Syntax:
+do
+{
+//code to be executed
+}
+while(condition);
+
+Implementation:
+public static void main(String args[]) 
+{ 
+int i = 5; 
+do 
+{ 
+System.out.println(i); 
+i = i+1; 
+} while (i <= 15); 
+} 
+
+FOR
+Syntax:
+for (initialization; condition; increment/decrement)
+{
+statement;
+}
+
+Implementation:
+public static void main(String args[])
+{
+for (int i = 1; i <= 10; i++)
+System.out.println(i);
+}

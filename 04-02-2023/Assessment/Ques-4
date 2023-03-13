@@ -1,0 +1,37 @@
+IMPLEMENT Emp details(eid,eName,basic,hra-12%b,ta-8%b,da-9%b,gross?--gross>=25k-A,gross>=10k<25--B,else C)
+
+SOLUTION-
+
+Sol.4 --
+
+
+class Compute
+{
+public static int Empdetails(int basic, char grade)
+{
+int hra, da, ta;
+hra = 0.12 * basic;
+da = 0.09 * basic;    
+ta = 0.08 * basic;   
+int gross = Math.round(basic + hra + da + ta);
+if(gross >= 25000)
+{
+grade = 'A';
+}
+else if(gross >= 10000 && gross <=25000)
+{
+grade = 'B';
+}
+else
+{
+grade = 'C';
+}
+public static void main (String[] args)
+{
+int eid;
+String ename;
+int basic = 20000;    
+char grade = 'A';    
+System.out.println(Empdetails(basic, grade));
+}
+}

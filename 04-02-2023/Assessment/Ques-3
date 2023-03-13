@@ -1,0 +1,50 @@
+IMPLEMENT Product Catalog (pid,pName,qty,up,stk,tc with remaining stock)
+
+SOLUTION-
+
+Sol.3 --
+
+class Product   
+{  
+private int pid;  
+private String pname;  
+private int qty;  
+private int unit_price;  
+private int stk;
+private int total_cost;
+Product(int pid, String pname, int qty, int unit_price, int stk, int total_cost)   
+{  
+this.pid=pid;  
+this.pname = pname;  
+this.qty = qty;  
+this.unit_price = unit_price;
+this.stk = stk;  
+this.total_cost = total_cost;
+}  
+}
+public class Catalog
+{  
+public static void main(String args[])   
+{  
+String pid = null;  
+String pName = null;  
+int quantity = 0;  
+int unit_price = 0;  
+int totalPrice = 0;  
+int stk = 0;
+}
+Scanner scan = new Scanner(System.in);  
+List<Product> product = new ArrayList<Product>();  
+System.out.println("Enter the product details: ");  
+System.out.print("Product ID: ");  
+pid = scan.nextLine();  
+System.out.print("Product Name: ");  
+pName = scan.nextLine();  
+System.out.print("Quantity: ");  
+quantity = scan.nextInt();  
+System.out.print("unit Price: ");  
+unit_price = scan.nextDouble();  
+totalPrice = unit_price * quantity;  
+product.add(new Product(pid, pName, quantity, unit_price, stk, totalPrice));  
+s.close();
+}

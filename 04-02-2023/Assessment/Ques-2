@@ -1,0 +1,100 @@
+IMPLEMENT OOPs-Inheritence wrt Interface
+
+SOLUTION-
+
+Sol.2 --
+
+Single level inheritance implementation:
+
+class A
+{
+void B() 
+{
+System.out.println("Hello...");
+}
+}
+class C extends A
+{
+void D() 
+{
+System.out.println("I am Priya...");
+}
+}
+public class Single 
+{
+public static void main(String args[]) 
+{
+C c = new C();
+c.D();
+c.B();
+}
+}
+
+
+
+Multilevel inheritance implementation:
+
+class B
+{
+public B() 
+{
+System.out.println(" HELLO ");
+}
+public void A() 
+{
+System.out.println("WORLD");
+}
+}
+class C extends B{
+public C()
+{
+System.out.println("C extending B");
+}
+public void D() {
+System.out.println("XYZ");
+}
+public void E() {
+System.out.println("ABC");
+}
+}
+public class F extends C{
+public F() {
+System.out.println("F extends C");
+}
+public void E() {
+System.out.println("ABCD");
+}
+public static void main(String args[]) {
+F f = new F();
+f.A();
+f.D();
+f.E();
+}
+}
+
+Multiple inheritance is not supported in java because if there is a class and two classes A and B having a method and if class inherits both classes then there will be two copies of the method one from each superclass and it is ambiguous to decide which method to be executed. To overcome this drawback, we have interface in Java. It has only declaration, no defining.
+
+Example-
+interface A{
+   void fun1();
+}
+interface B{
+   void fun2();
+}
+class C implements A, B{
+   public void fun1() {
+      System.out.println("fun1 is executed");
+   }
+   public void fun2() {
+      System.out.println("fun2 is executed");
+   }
+}
+public class Demo {
+   public static void main(String args[]) {
+      C c = new C();
+      c.fun1();
+      c.fun2();
+   }
+}
+
+Here, The class C implements the interfaces A and B. In the method main() in class Demo, an object a of class C is created. Then the methods fun1() and fun2() are called.
