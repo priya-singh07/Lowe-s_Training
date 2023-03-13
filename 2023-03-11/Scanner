@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class product {
+	public static void calc(String pName, int qty, int stock, int up) {
+        if(qty > stock) 
+        {
+            System.out.println("The product " + pName + " is out of stock");
+            return;
+        }
+        System.out.println("Total cost: "+up*qty);
+        System.out.println("Remaining Stock: "+ (stock-qty));
+    }
+    public static void main(String[] args) {
+        System.out.print("Enter number of products: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) 
+        {
+        	System.out.print("Please enter product id: ");
+            String pid = sc.next();
+            System.out.print("Please enter product name: ");
+            String pname = sc.next();
+            System.out.print("Please enter unit price: ");
+            int up = sc.nextInt();
+            System.out.print("Please enter qty: ");
+            int qty = sc.nextInt();
+            System.out.print("Please enter available stock qty: ");
+            int stk = sc.nextInt();
+            calc(pname, qty, stk, up);
+        }
+        sc.close();
+    }
+
+}

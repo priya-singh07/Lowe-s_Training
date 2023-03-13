@@ -1,0 +1,19 @@
+@FunctionalInterface
+interface In1
+{
+public int show();
+}
+public class A {
+public static void main(String[] args) throws Exception{
+/*
+* In1 i1 = new In1() {
+*
+* @Override public void show() { System.out.println(c);
+*
+* } }; i1.show();
+*/
+In1 i1=()->{
+    System.out.println(c);
+};
+i1.show();
+}

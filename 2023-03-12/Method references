@@ -1,0 +1,5 @@
+Method references can be achieved by reference of-
+
+a) Constructor
+b) Static method (var, methods and blocks)
+c) Instance method
