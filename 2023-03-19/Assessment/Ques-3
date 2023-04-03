@@ -1,0 +1,14 @@
+Spring framework is lightweight open source framework by Rod Johnson.
+
+Spring core
+Dependency injection is by 2 methods-
+Setter
+Constructor
+
+Steps to develop spring applications-
+a- create java project
+b- load the jar files
+c- create bean class
+d- create xml files to get the properties
+e- create test class
+

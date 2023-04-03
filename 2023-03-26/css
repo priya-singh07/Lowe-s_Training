@@ -1,0 +1,18 @@
+CSS -- Cascading StyleSheet
+describes how html element look
+
+selector-- html element
+declaration-- prop value
+
+3 types--
+
+Inline CSS-- apply unique style for single element
+Internal CSS-- apply in a single html page
+External CSS
+
+CSS border--
+dashed
+dotted
+inset
+outset
+solid

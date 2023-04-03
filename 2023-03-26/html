@@ -1,0 +1,22 @@
+HTML -- HyperText Markup Language
+
+<html>
+    <marquee>VEERA</marquee>
+    <marquee direction="right">YADAV</marquee>
+    <hr>
+    <body>
+        <b><u><s>UI Design</s></u></b>
+        <br>
+        H<sub>2</sub>O<br>
+        2<sup>3</sup>=8<br>
+        <ol style="list-style-type: upper-roman">
+        <li>java</li>
+        <li>python</li>
+        <li>aws</li>
+        <li>react</li>
+    </ol>
+    Name<input type="text" value="VEERA" size="5" disabled><br>
+    Pwd<input type="password"><br>
+    Male<input type="radio" name="r1">Female<input type="radio" name="r1"><br>
+    </body>
+</html>
